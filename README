@@ -1,0 +1,4 @@
+This is a simple library for making API request to Yahoo!'s YQL, for Stock QUotes.
+
+TODO: set-up try/catch blocks for bad WebRequests/Network connectivity.
+TODO: redesign for multiple tickers in a single request.
