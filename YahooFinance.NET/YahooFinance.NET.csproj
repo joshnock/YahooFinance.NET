@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>HtmlAgilityPack\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -44,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\YahooExceptionNoComponentsDataAvailable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\yQuote.cs" />
     <Compile Include="StockQuoter.cs" />
@@ -51,6 +55,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HtmlAgilityPack\Net40\HtmlAgilityPack.dll" />
+    <Content Include="HtmlAgilityPack\Net40\HtmlAgilityPack.pdb" />
+    <Content Include="HtmlAgilityPack\Net40\HtmlAgilityPack.XML" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
